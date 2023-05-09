@@ -1,5 +1,5 @@
 import {  ThemeProvider  }  from'next-themes'
-import Layout from '@/components/Layout'
+import Layout from '@/app/layout'
 
 export default function MyApp({ Component, pageProps }) {
     return (
