@@ -1,5 +1,6 @@
 import Navbar from '@/components/Navbar'
 import '@/styles/globals.css'
+import '@/components/Container'
 
 
 
