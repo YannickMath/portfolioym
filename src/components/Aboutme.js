@@ -2,7 +2,7 @@ export default function Aboutme() {
 
     return(
         <div>
-            fddqsqf
+            About me
         </div>
     )
 }

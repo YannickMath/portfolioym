@@ -7,14 +7,14 @@ export default function SocialIcons() {
     <a
       href="https://www.linkedin.com/in/yannick-mathieu/"
       title="Yannick MATHIEU' Page Linkedin"
-      className="lg:w-10 w-8 flex justify-center"
+      className="lg:w-10 w-8 m-2 flex justify-center"
     >
       <BsLinkedin aria-hidden="true"  />
     </a>
     <a
       href="https://github.com/YannickMath"
       title="Yannick MATHIEU' Page Github"
-      className="lg:w-10 w-8 flex justify-center"
+      className="lg:w-10 w-8 m-2 flex justify-center"
     >
       <BsGithub aria-hidden="true"  />
     </a>

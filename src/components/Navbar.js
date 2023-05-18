@@ -17,9 +17,9 @@ function Navbar() {
   ];
 
   return (
-    <header className="bg-white justify-between">
+    <header className="bg-white justify-between max-h-32 flex sm:block ">
       <nav
-        className="flex max-w-7xl items-center justify-between p-8"
+        className="flex w-full green items-center justify-between p-2 "
         aria-label="Global"
       >
         <div className="w-1/6 flex justify-center">
@@ -27,30 +27,28 @@ function Navbar() {
         </div>
 
         <div className="flex flex-col items-center sm:flex-row justify-between p-6 w-4/6">
-  {navigation.map((item) => (
-    <Link
-      key={item.name}
-      href={item.href}
-      className="text-center sm:text-lg font-semibold leading-6 text-gray-900 hover:underline"
-    >
-      {item.name}
-    </Link>
-  ))}
-</div>
+          {navigation.map((item) => (
+            <Link
+              key={item.name}
+              href={item.href}
+              className="text-center sm:text-lg font-semibold leading-6 text-gray-900 hover:underline"
+            >
+              {item.name}
+            </Link>
+          ))}
+        </div>
 
-<div className="flex flex-col sm:flex-row items-center justify-center w-1/6">
-  <div
-    href="#"
-    className=" flex justify-center text-sm font-semibold leading-6 text-gray-900"
-  >
-    <SocialIcons />
-  </div>
-  <div className="flex justify-center text-xl font-semibold leading-6 text-gray-900">
-    <MdOutlineLightMode />
-  </div>
-</div>
-
-
+        <div className="flex flex-col sm:flex-row items-center justify-center w-1/6">
+          <div
+            href="#"
+            className=" flex justify-center text-sm font-semibold leading-6 text-gray-900"
+          >
+            <SocialIcons />
+          </div>
+          <div className="flex justify-center text-xl font-semibold leading-6 text-gray-900">
+            <MdOutlineLightMode className="hover:cursor-pointer"/>
+          </div>
+        </div>
       </nav>
     </header>
   );
